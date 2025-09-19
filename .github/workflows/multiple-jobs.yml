@@ -13,5 +13,5 @@ jobs:
               uses: actions/checkout@v4
             - name: Run build
               run: |
-                chmod +x create-dummy-file.sh
+                chmod +x ./scripts/create-dummy-file.sh
                 ./scripts/create-dummy-file.sh
