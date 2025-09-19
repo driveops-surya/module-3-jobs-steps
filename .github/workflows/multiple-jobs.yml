@@ -1,4 +1,4 @@
-name: Multiple Jobs Sample
+name: Multiple-Jobs Sample
 
 on:
     push:
