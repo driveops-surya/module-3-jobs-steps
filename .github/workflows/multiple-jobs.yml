@@ -1,13 +1,18 @@
-name: Multiple-Jobs Sample
+name: Jobs Lab
 
-on:
-    push:
-        branches:
-            - main
+on: [push]
 
 jobs:
-  error-demo:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - run: exit 1
-
+      - run: echo "Building..."
+  test:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Testing after build"
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Linting in parallel"
