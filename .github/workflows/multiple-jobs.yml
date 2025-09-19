@@ -14,4 +14,4 @@ jobs:
             - name: Run build
               run: |
                 chmod +x create-dummy-file.sh
-                ./create-dummy-file.sh
+                ./scripts/create-dummy-file.sh
