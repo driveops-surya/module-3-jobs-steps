@@ -6,8 +6,9 @@ on:
             - main
 
 jobs:
-  timeout-demo:
+  error-demo:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
     steps:
-      - run: sleep 400
+      - run: exit 1
+        continue-on-error: true
+
