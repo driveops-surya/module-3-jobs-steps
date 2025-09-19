@@ -6,19 +6,11 @@ on:
             - main
 
 jobs:
-    build:
+    run-script:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout code
               uses: actions/checkout@v4
             - name: Run build
-              run: echo "Building the project..."
-
-    test:
-        runs-on: ubuntu-latest
-        needs: build
-        steps:
-            - name: Checkout code
-              uses: actions/checkout@v4
-            - name: Run tests
-              run: echo "Running tests..."
+              run: ./create-dummy-file.sh
+              working-directory: scripts
