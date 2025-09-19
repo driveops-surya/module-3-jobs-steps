@@ -12,5 +12,7 @@ jobs:
             - name: Checkout code
               uses: actions/checkout@v4
             - name: Run build
-              run: ./create-dummy-file.sh
+              run: |
+                chmod +x create-dummy-file.sh
+                ./create-dummy-file.sh
               working-directory: scripts
