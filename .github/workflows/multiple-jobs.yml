@@ -15,4 +15,3 @@ jobs:
               run: |
                 chmod +x create-dummy-file.sh
                 ./create-dummy-file.sh
-              working-directory: scripts
