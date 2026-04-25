@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Create two text files
-touch file1.txt
+touch file1.txtc
 touch file2.txt
 touch file3.txt
 
