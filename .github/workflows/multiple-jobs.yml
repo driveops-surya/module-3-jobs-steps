@@ -4,15 +4,15 @@ on: [push]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: arc-runner-set
     steps:
       - run: echo "Building..."
   test:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: arc-runner-set
     steps:
       - run: echo "Testing after build"
   lint:
-    runs-on: ubuntu-latest
+    runs-on: arc-runner-set
     steps:
       - run: echo "Linting in parallel"
